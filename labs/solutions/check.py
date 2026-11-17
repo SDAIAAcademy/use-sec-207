@@ -307,6 +307,13 @@ def lab_2_3() -> None:
                 assert c == KEY["triage"][f"{t}|{filer}"]
             u = c["tp"] + c["fn"]
             lines.append(f"at {t}, {filer}: urgent {u}, missed {c['fn']} ({pct(c['fn'], u)})")
+    for lang in ("العربية", "لغة أخرى مترجمة"):
+        c = conf([r for r in fs if r["لغة الصحيفة"] == lang], 60)
+        lines.append(f"at 60, {lang}: urgent {c['tp'] + c['fn']}, missed {c['fn']}")
+    band = [r for r in fs if r["مقدّم الدعوى"] == "صاحب الدعوى بنفسه" and 45 <= int(r["درجة «أسبقية»"]) < 60]
+    lines.append(f"self-represented filings scored 45-59: {len(band)}")
+    c60 = conf(fs, 60)
+    lines.append(f"overall accuracy at 60: {pct(c60['tp'] + c60['tn'], 500)}")
     sol = rows(SOL / "subgroup_table.csv")
     assert len(sol) == 4
     say("2.3", *lines)
