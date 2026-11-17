@@ -349,9 +349,9 @@ def lab_2_5() -> None:
 
 def lab_2_6() -> None:
     sol = rows(SOL / "classification_sheet.csv")
-    assert {r["الرقم"]: r["مستوى المخاطر عند سدايا"] for r in sol} == KEY["classify"]
+    assert {r["الرقم"]: r["مستوى المخاطر بتعريفات سدايا (تقدير الوزارة)"] for r in sol} == KEY["classify"]
     assert rows(FILES / "start" / "checklist_complete.csv") == rows(SOL / "checklist.csv")
-    high = [r["الرقم"] for r in sol if r["مستوى المخاطر عند سدايا"] == "عالية"]
+    high = [r["الرقم"] for r in sol if r["مستوى المخاطر بتعريفات سدايا (تقدير الوزارة)"] == "عالية"]
     say("2.6", f"five deployments classified; high under the SDAIA levels: {' '.join(high)}")
 
 

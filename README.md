@@ -45,6 +45,7 @@ AI in Justice and Legal Services
 - **العمل التحضيري** (نحو 45 دقيقة): ورقة واحدة يرسم فيها المشارك مسار قضية أو طلب أو عقد في وحدته، ويعلّم الخطوات التي تخص شخصًا. يبدأ منها المختبر 1.1، وتعود في المهمة المتعقَّبة.
 - **يومان، في كل منهما ثماني جلسات** من 37 إلى 45 دقيقة: شرح قصير، ثم نقطة تحقق، ثم مختبر من 20 أو 25 دقيقة. مجموع الشرح خمس ساعات، ومجموع المختبرات ست.
 - **ثلاثة أوضاع للذكاء الاصطناعي:** بلا مساعد في كل مختبرات اليوم الأول (التحقق من المخرجات مقابل المصادر)، ومساعد مدرّس في مختبرات الفرز والإجراءات العادلة، ومساعد كامل في الخريطة.
+- **المساعد المستعمل:** مساعد محادثة مستضاف مجاني، أو المساعد المؤسسي المعتمد في جهة المشارك. لا يُنزَّل أي نموذج على الجهاز، ولا يُرفع إلى المساعد إلا ملفات الورشة الاصطناعية.
 - **كل مختبر يبدأ من ملفات جاهزة،** ولكل جزء ثانٍ أو ثالث ملف بداية في `labs/files/start/`، فلا يتوقف مختبر على مختبر قبله.
 
 ## التقييم
@@ -128,6 +129,7 @@ AI in Justice and Legal Services
 
 - [ProPublica: How We Analyzed the COMPAS Recidivism Algorithm (2016)](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm)
 - [Regulation (EU) 2024/1689, the Artificial Intelligence Act (EUR-Lex)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689)
+- [EUR-Lex: Regulation (EU) 2026/1744, the Digital Omnibus on AI (OJ L, 24 July 2026)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng)
 - [Council of the EU and European Parliament: PE-CONS 30/26, the Digital Omnibus on AI (June 2026)](https://data.consilium.europa.eu/doc/document/PE-30-2026-INIT/en/pdf)
 - [EEAS: Artificial Intelligence: Council gives final green light to simplify and streamline rules (30 June 2026)](https://www.eeas.europa.eu/delegations/chile/artificial-intelligence-council-gives-final-green-light-simplify-and-streamline-rules_en)
 

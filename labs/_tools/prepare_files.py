@@ -789,9 +789,9 @@ judgments.txt ثمانية أحكام بحالتها: نافذ، أو منقوض
               [list(c) if c[0] in ("R1", "R2", "R3") else [c[0], c[1], "", "", "", ""] for c in CHECKLIST])
     write_csv(FILES / "start" / "checklist_complete.csv", chk_header, [list(c) for c in CHECKLIST])
     write_csv(SOL / "case_files_traced.csv", ["الملف", "أين لا يستطيع الشخص أن يعترض"], [[k[0], k[2]] for k in CASE_FILES])
-    write_csv(FILES / "dueprocess" / "classification_sheet.csv", ["الرقم", "الاستخدام", "مستوى المخاطر عند سدايا", "عالي المخاطر في قانون الاتحاد الأوروبي؟", "ما تطلبه سياسة الوزارة"],
+    write_csv(FILES / "dueprocess" / "classification_sheet.csv", ["الرقم", "الاستخدام", "مستوى المخاطر بتعريفات سدايا (تقدير الوزارة)", "عالي المخاطر في قانون الاتحاد الأوروبي؟", "ما تطلبه سياسة الوزارة"],
               [[c[0], c[1], "", "", ""] for c in CLASSIFY])
-    write_csv(SOL / "classification_sheet.csv", ["الرقم", "الاستخدام", "مستوى المخاطر عند سدايا", "عالي المخاطر في قانون الاتحاد الأوروبي؟", "ما تطلبه سياسة الوزارة"],
+    write_csv(SOL / "classification_sheet.csv", ["الرقم", "الاستخدام", "مستوى المخاطر بتعريفات سدايا (تقدير الوزارة)", "عالي المخاطر في قانون الاتحاد الأوروبي؟", "ما تطلبه سياسة الوزارة"],
               [list(c) for c in CLASSIFY])
     KEY["dueprocess"] = {c[0]: c[2] for c in CHECKLIST}
     KEY["classify"] = {c[0]: c[2] for c in CLASSIFY}
