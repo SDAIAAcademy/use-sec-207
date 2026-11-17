@@ -16,6 +16,7 @@ recorded, authored stand-ins with planted errors.
 from __future__ import annotations
 
 import csv
+import difflib
 import json
 import re
 import sys
@@ -149,12 +150,14 @@ def lab_1_4() -> None:
     key = KEY["1.4"]["diffs"]
     assert changed == sorted(key), (changed, sorted(key))
     words = sum(len(t.split()) for _, t in ref.values())
+    same = sum(sum(b.size for b in difflib.SequenceMatcher(a=ref[k][1].split(), b=mah[k][1].split()).get_matching_blocks()) for k in ref)
+    assert (words, same) == (67, 60), (words, same)
     meaning = [k for k, v in key.items() if v == "يغيّر المعنى"]
     tr = KEY["1.4"]["translation"]
     tr_meaning = [k for k, v in tr.items() if v == "يغيّر المعنى"]
     en = {r["المقطع"]: r["النص الإنجليزي الملزم"] for r in rows(FILES / "transcript" / "clause_translation.csv")}
-    assert "twice" in en["T1"] and "may" in en["T2"]
-    say("1.4", f"transcript: {words} words, {len(changed)} lines changed, {len(meaning)} change the meaning (lines {' '.join(meaning)})",
+    assert "half" in en["T1"] and "may" in en["T2"]
+    say("1.4", f"transcript: {words} words, {same} matched ({pct(same, words)}), {len(changed)} lines changed, {len(meaning)} change the meaning (lines {' '.join(meaning)})",
         f"translation: {len(tr_meaning)} of {len(tr)} passages change the meaning ({' '.join(tr_meaning)})")
 
 
@@ -207,8 +210,8 @@ def lab_1_6() -> None:
     grid = [g for g in contract_grid() if g["العقد"] > "C05"]
     assert rows(FILES / "start" / "review_part1_scored.csv") == [g for g in rows(SOL / "review_sheet_scored.csv") if g["العقد"] <= "C05"]
     c07 = text(FILES / "contracts" / "C07.txt")
-    assert "twice the Contract Value" in c07 and "بما لا يتجاوز قيمة العقد" in c07
-    say("1.6", contract_summary(grid), "C07: the binding English says twice; the Arabic translation drops it")
+    assert "half the Contract Value" in c07 and "بما لا يتجاوز قيمة العقد" in c07
+    say("1.6", contract_summary(grid), "C07: the binding English says half; the Arabic translation drops it")
 
 
 # ------------------------------------------------------------------ 1.7 error log

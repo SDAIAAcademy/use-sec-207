@@ -1,0 +1,3 @@
+/* USE-SEC-207: a teaching day has eight sessions, so the projected agenda runs in two columns.
+   The reading view on a phone keeps the engine's single column. */
+html:not(.ax-view-read) .deck > .slide .agenda { grid-template-columns: repeat(2, minmax(0, 1fr)); }
