@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.3 · الأخطاء بحسب مقدّم الدعوى · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_3_errors_by_filer.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-3">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.3</span>
+<h1>الأخطاء بحسب مقدّم الدعوى</h1>
+<p>تحسب الدعاوى العاجلة الفائتة لكل فئة من مقدّمي الدعاوى (محامٍ، وصاحب الدعوى بنفسه) عند العتبتين، وتكتب من يتحمل الفرق وضابطًا له. الذكاء الاصطناعي مدرّس.</p>
+<div class="meta"><span>25 دقيقة</span><span>اليوم 2</span><span>الجلسة 3: التحيز في بيانات القضايا السابقة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.3">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <ul>
+      <li>جدول الفوات بحسب مقدّم الدعوى عند العتبتين: العاجل، والفائت، ومعدل الفوات لكل فئة.</li>
+      <li>ضابط مكتوب للفئة التي يفوتها المصنف أكثر، ومن يملكه.</li>
+    </ul>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/triage/filings_500.csv" target="_blank"><b>triage/filings_500.csv</b><span>العمود C: مقدّم الدعوى، محامٍ أو صاحب الدعوى بنفسه. والعمود D: لغة الصحيفة.</span></a>
+    <a href="files/triage/subgroup_template.csv" target="_blank"><b>triage/subgroup_template.csv</b><span>قالب الجدول: فئتان في عتبتين.</span></a>
+    <a href="files/triage/triage_guide.txt" target="_blank"><b>triage/triage_guide.txt</b><span>السطر الأخير: من أين تعلّم «أسبقية».</span></a>
+  </div>
+  <p class="small">برنامج جداول. <b>وضع الذكاء الاصطناعي: مساعد مدرّس.</b></p>
+
+  <h2>الخطوات</h2>
+
+  <div class="step">
+    <h3>1 · التصفية بحسب مقدّم الدعوى <span class="min">3 دقائق</span></h3>
+    <p>أضف شرطًا ثالثًا إلى صيغ العدّ: <code>C:C,"صاحب الدعوى بنفسه"</code>. أو استعمل جدولًا محوريًا بمقدّم الدعوى في الصفوف.</p>
+  </div>
+
+  <div class="step">
+    <h3>2 · العاجل والفائت عند 60 <span class="min">8 دقائق</span></h3>
+    <p>لكل فئة: كم دعوى عاجلة؟ وكم منها دون 60؟ معدل الفوات = الفائت ÷ العاجل في الفئة نفسها. املأ الصفين الأولين.</p>
+  </div>
+
+  <div class="step">
+    <h3>3 · الحساب عند 45 <span class="min">5 دقائق</span></h3>
+    <p>كرر الحساب عند 45 واملأ الصفين الآخرين. هل يختفي الفرق بين الفئتين؟ وبأي ثمن رأيته في المختبر 2.2؟</p>
+  </div>
+
+  <div class="step">
+    <h3>4 · من أين جاءت الوسوم <span class="min">3 دقائق</span></h3>
+    <p>اقرأ السطر الأخير من دليل الفرز. على ماذا تعلّم «أسبقية»؟ ولماذا قد يتعلم أن يؤخر صحيفة يكتبها صاحبها بنفسه؟</p>
+  </div>
+
+  <div class="step">
+    <h3>5 · الضابط ومن يملكه <span class="min">6 دقائق</span></h3>
+    <p>اكتب ضابطًا واحدًا لهذه الفئة يمكن أن يبدأ الأسبوع القادم، ومن يملكه، وكيف تعرف بعد شهر هل نجح. ناقشه مع المساعد المدرّس.</p>
+    <div class="prompt" data-tool="مساعد محادثة في دور المدرّس">أنا مدير محكمة أراجع مصنفًا يفوته العاجل عند فئة واحدة من مقدّمي الدعاوى. لا تقترح عليّ ضابطًا. اقرأ الضابط الذي كتبته واسألني ثلاثة أسئلة تكشف أين قد يفشل. الضابط: <span class="ph">[الصق ضابطك]</span></div>
+  </div>
+
+  <div class="step stretch">
+    <h3>✱ تمرين إضافي</h3>
+    <p>كرر الحساب بحسب لغة الصحيفة: هل يتكرر النمط؟</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>ما معدل الفوات لكل فئة عند 60؟</li>
+    <li>لماذا لا يكفي معدل الفوات الإجمالي (17%) لوصف ما يحدث؟</li>
+    <li>ما الذي يجعل هذا التحيز «تاريخيًا»؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <ul>
+      <li>الحل في <code>labs/solutions/subgroup_table.csv</code>، ويتحقق منه <code>uv run labs/solutions/check.py 2.3</code>.</li>
+      <li>عند 60: المحامون 38 دعوى عاجلة، لم يفت منها شيء. أصحاب الدعاوى بأنفسهم 25، فات منها 11 (44%). كل الفوات في فئة واحدة. عند 45 لا يفوت شيء من الفئتين، لكن المكتب يتلقى 184. وعند 55 يفوت 9 من 25 (36%).</li>
+      <li>بحسب اللغة (التمرين الإضافي): عند 60 فات 10 من 56 عاجلة بالعربية و1 من 7 مترجمة. الفرق هنا أصغر بكثير من فرق مقدّم الدعوى.</li>
+      <li>التحيز تاريخي: تعلّم «أسبقية» من قرارات كتبة كانوا يقدّمون الصحف المكتوبة بلغة قانونية. الدليل المرجعي للتحيز الصادر عن سدايا يعرّف هذا النوع ويذكر العدالة بين القطاعات الحساسة له.</li>
+      <li>ضوابط مقبولة: مراجعة بشرية لصحف أصحاب الدعاوى بأنفسهم في أنواع النفقة والإخلاء بين 45 و59؛ وتقرير شهري للفوات بحسب الفئة يملكه سلطان الحربي؛ وإعادة وسم عينة قبل إعادة التدريب. الضابط الضعيف: «تدريب الكتبة على الانتباه».</li>
+      <li>مثال الضابط الأول بالأرقام: صحف أصحاب الدعاوى بأنفسهم بين 45 و59 من كل الأنواع 43 صحيفة؛ إضافتها كلها إلى 69 تتجاوز الطاقة. لهذا يُقصر الضابط على أنواع بعينها أو على مراجعة سريعة لا على المكتب العاجل.</li>
+    </ul>
+  </details>
+</article>
+<nav class="pager"><a href="D2_2_second_threshold.html" rel="prev">→ المختبر السابق</a><a href="D2_4_due_process_part1.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 9137dd5</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T21:03:51Z","version":"2027.1.0","commit":"9137dd5"},"course":{"id":"use-sec-207","code":"USE-SEC-207","title":"الذكاء الاصطناعي في قطاع العدل والخدمات القانونية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-sec-207/","repo":"SDAIAAcademy/use-sec-207","home":"../index.html"},"lab":{"id":"2.3","title":"الأخطاء بحسب مقدّم الدعوى","summary":"تحسب الدعاوى العاجلة الفائتة لكل فئة من مقدّمي الدعاوى (محامٍ، وصاحب الدعوى بنفسه) عند العتبتين، وتكتب من يتحمل الفرق وضابطًا له. الذكاء الاصطناعي مدرّس.","minutes":25,"day":2,"unit":"اليوم 2","session":3,"deck":"../slides/day2.html#lab-2-3","prev":"D2_2_second_threshold.html","next":"D2_4_due_process_part1.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

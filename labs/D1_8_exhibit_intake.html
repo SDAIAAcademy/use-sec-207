@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.8 · فحص استلام الأدلة الرقمية · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_8_exhibit_intake.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-8">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.8</span>
+<h1>فحص استلام الأدلة الرقمية</h1>
+<p>تقرر لكل دليل من ثمانية أدلة رقمية وفق قواعد الاستلام: قبول، أو طلب الأصل وبياناته، أو إحالة إلى خبير رقمي، أو إحالة إلى القاضي كمسألة نزاهة، مع السبب.</p>
+<div class="meta"><span>20 دقيقة</span><span>اليوم 1</span><span>الجلسة 8: الأدلة المولّدة أو المعدّلة، والتحيز للأتمتة</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.8">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <ul>
+      <li>قرار مسبب لكل دليل من ثمانية أدلة رقمية: قبول، أو طلب الأصل، أو خبير رقمي، أو مسألة نزاهة.</li>
+      <li>قائمة بالأدلة التي أغرتك فيها أداة الكشف بقرار لا تسنده الوقائع.</li>
+    </ul>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/evidence/intake_rules.txt" target="_blank"><b>evidence/intake_rules.txt</b><span>قواعد الاستلام: أربعة قرارات ومتى يُتخذ كل منها.</span></a>
+    <a href="files/evidence/exhibits.csv" target="_blank"><b>evidence/exhibits.csv</b><span>ثمانية أدلة: النوع والمصدر والبصمة الرقمية وسلسلة الحيازة وما لاحظه الكاتب، وعمودا القرار والسبب.</span></a>
+  </div>
+  <p class="small">برنامج جداول. <b>وضع الذكاء الاصطناعي: بلا مساعد.</b> الأدلة أوصاف اصطناعية في جدول، لا ملفات صوت أو صورة.</p>
+
+  <h2>الخطوات</h2>
+
+  <div class="step">
+    <h3>1 · قواعد الاستلام <span class="min">3 دقائق</span></h3>
+    <p>اقرأ القرارات الأربعة. لاحظ السطر الأخير: مخرج أداة الكشف قرينة، لا سبب كافٍ.</p>
+  </div>
+
+  <div class="step">
+    <h3>2 · قرار لكل دليل <span class="min">11 دقيقة</span></h3>
+    <p>لكل دليل اقرأ الأعمدة الخمسة واكتب القرار وسببه في سطر. اسأل بالترتيب: هل الأصل محفوظ؟ هل البصمة متطابقة؟ هل سلسلة الحيازة مكتملة؟ هل في الملف أو بياناته ما يناقض الرواية؟ هل فيه ما يخاطب أدوات المحكمة لا قضاتها؟</p>
+  </div>
+
+  <div class="step">
+    <h3>3 · أين أغرتك الأداة <span class="min">3 دقائق</span></h3>
+    <p>علّم الأدلة التي كان قرارك فيها سيتغير لو صدّقت مخرج أداة الكشف وحده.</p>
+  </div>
+
+  <div class="step">
+    <h3>4 · قارن بالمفتاح <span class="min">3 دقائق</span></h3>
+    <p>يعرض المدرّب المفتاح. ناقش كل خلاف: هل كان قرارك أشد أم أخف؟ وما كلفة كل منهما على الطرفين؟</p>
+  </div>
+
+  <div class="step stretch">
+    <h3>✱ تمرين إضافي</h3>
+    <p>اكتب سؤالين يطرحهما الكاتب على مقدّم أي تسجيل صوتي قبل قبوله.</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>أي الأدلة يُقبل كما هو؟</li>
+    <li>لماذا لا يكفي «أصلي بنسبة 92%» لقبول E02؟</li>
+    <li>ما الذي يجعل E06 مسألة نزاهة لا مسألة صحة؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <ul>
+      <li>المفتاح في <code>labs/solutions/exhibits.csv</code>، ويتحقق منه <code>uv run labs/solutions/check.py 1.8</code>.</li>
+      <li>قبول: E01 وE05. طلب الأصل: E04 وE07. خبير رقمي: E02 وE03 وE08. مسألة نزاهة: E06 (نص أبيض مخفي يخاطب أدوات الذكاء الاصطناعي، كما تحذر الإرشادات القضائية البريطانية لعام 2025).</li>
+      <li>خطأ شائع: قبول E02 بسبب درجة أداة الكشف. هذا هو التحيز للأتمتة الذي شرحته الجلسة. وخطأ معاكس: رفض E07 بحجة التاريخ، والتاريخ قد يكون تاريخ نسخ: يُطلب الأصل أولًا.</li>
+      <li>المهارة هنا للمدير لا للخبير: أن يعرف متى يطلب الأصل ومتى يحيل، لا أن يفحص الملف بنفسه.</li>
+    </ul>
+  </details>
+</article>
+<nav class="pager"><a href="D1_7_error_log.html" rel="prev">→ المختبر السابق</a><a href="D2_1_triage_threshold.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 9137dd5</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T21:03:51Z","version":"2027.1.0","commit":"9137dd5"},"course":{"id":"use-sec-207","code":"USE-SEC-207","title":"الذكاء الاصطناعي في قطاع العدل والخدمات القانونية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-sec-207/","repo":"SDAIAAcademy/use-sec-207","home":"../index.html"},"lab":{"id":"1.8","title":"فحص استلام الأدلة الرقمية","summary":"تقرر لكل دليل من ثمانية أدلة رقمية وفق قواعد الاستلام: قبول، أو طلب الأصل وبياناته، أو إحالة إلى خبير رقمي، أو إحالة إلى القاضي كمسألة نزاهة، مع السبب.","minutes":20,"day":1,"unit":"اليوم 1","session":8,"deck":"../slides/day1.html#lab-1-8","prev":"D1_7_error_log.html","next":"D2_1_triage_threshold.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

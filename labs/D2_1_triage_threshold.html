@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 2.1 · جدول الالتباس عند العتبة 60 · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D2_1_triage_threshold.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day2.html#lab-2-1">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 2.1</span>
+<h1>جدول الالتباس عند العتبة 60</h1>
+<p>تبني في جدول بيانات جدول الالتباس لمصنِّف «أسبقية» على 500 صحيفة دعوى عند العتبة التي ضبطها المورّد (60)، وتقارن ما يذهب إلى مكتب الدعاوى العاجلة بطاقته. الذكاء الاصطناعي مدرّس يسأل ولا يجيب.</p>
+<div class="meta"><span>25 دقيقة</span><span>اليوم 2</span><span>الجلسة 1: استقبال الدعاوى وفرزها</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="2.1">
+  <div class="box goal">
+    <h3>ستخرج من هذا المختبر بـ</h3>
+    <ul>
+      <li>جدول التباس لمصنِّف «أسبقية» على 500 صحيفة دعوى عند العتبة 60: أربع خانات بأعدادها.</li>
+      <li>مقارنة لما يذهب إلى مكتب الدعاوى العاجلة بطاقته، وسطر لكل خانة: من يتحملها.</li>
+    </ul>
+  </div>
+
+  <h2>ما تحتاجه</h2>
+  <div class="files">
+    <a href="files/triage/triage_guide.txt" target="_blank"><b>triage/triage_guide.txt</b><span>كيف يعمل الفرز، والعتبتان، وطاقة المكتب العاجل، ومن أين جاء الوسم المرجعي.</span></a>
+    <a href="files/triage/filings_500.csv" target="_blank"><b>triage/filings_500.csv</b><span>500 صحيفة: النوع، ومقدّم الدعوى، واللغة، ودرجة «أسبقية»، والوسم المرجعي.</span></a>
+    <a href="files/triage/confusion_template.csv" target="_blank"><b>triage/confusion_template.csv</b><span>قالب الجدول للعتبتين.</span></a>
+  </div>
+  <p class="small">برنامج جداول. <b>وضع الذكاء الاصطناعي: مساعد مدرّس.</b> يسألك ولا يحسب عنك. الأرقام تُحسب في الجدول بصيغ ظاهرة.</p>
+
+  <h2>الخطوات</h2>
+
+  <div class="step">
+    <h3>1 · الدليل والملف <span class="min">4 دقائق</span></h3>
+    <p>اقرأ الدليل. افتح الملف واعرف أعمدته: الدرجة في العمود E، والوسم المرجعي في العمود F.</p>
+  </div>
+
+  <div class="step">
+    <h3>2 · فوق العتبة أم دونها <span class="min">4 دقائق</span></h3>
+    <p>أضف عمودًا G بالصيغة <code>=IF(E2&gt;=60,"فوق","دون")</code> وانسخها إلى آخر صف. هذا ما يفعله «أسبقية»: الصحيفة إما إلى المكتب العاجل أو إلى القائمة العادية.</p>
+  </div>
+
+  <div class="step">
+    <h3>3 · الخانات الأربع <span class="min">9 دقائق</span></h3>
+    <p>احسب كل خانة بصيغة عدّ، مثل <code>=COUNTIFS(E:E,"&gt;=60",F:F,"عاجل")</code>، واملأ الصف الأول من القالب. تأكد أن مجموع الخانات الأربع 500.</p>
+    <table class="t small">
+      <tr><th></th><th>فوق العتبة</th><th>دون العتبة</th></tr>
+      <tr><td><b>عاجل</b></td><td class="fill">وصل إلى المكتب العاجل</td><td class="fill">فات: ينتظر ستة أسابيع</td></tr>
+      <tr><td><b>عادي</b></td><td class="fill">قُدّم بلا داعٍ</td><td class="fill">في مكانه</td></tr>
+    </table>
+  </div>
+
+  <div class="step">
+    <h3>4 · المجموع فوق العتبة والطاقة <span class="min">4 دقائق</span></h3>
+    <p>كم صحيفة تذهب إلى المكتب العاجل عند 60؟ قارنها بطاقته (90 لكل 500). هل يتسع لها؟</p>
+  </div>
+
+  <div class="step">
+    <h3>5 · من يتحمل كل خانة <span class="min">4 دقائق</span></h3>
+    <p>اكتب تحت الجدول سطرًا لكل خانة من الخانتين الخاطئتين: من يتحمل الخطأ، وكيف يشعر به، وهل يعلم أن أداة رتبته.</p>
+    <div class="prompt" data-tool="مساعد محادثة في دور المدرّس">أنا أتعلم قراءة جدول الالتباس لمصنِّف يرتب الدعاوى بحسب الاستعجال. لا تعطني أي رقم ولا أي جواب. اسألني سؤالًا واحدًا في كل مرة عن جدولي حتى أكتشف بنفسي من يتحمل كل خطأ. جدولي: <span class="ph">[الصق الخانات الأربع]</span></div>
+  </div>
+
+  <div class="step stretch">
+    <h3>✱ تمرين إضافي</h3>
+    <p>اطلب من المساعد المدرّس أن يسألك ثلاثة أسئلة عن جدولك دون أن يعطيك الجواب، واحفظ المحادثة في مجلدك.</p>
+  </div>
+
+  <h2>أسئلة تحقق</h2>
+  <ol class="checks">
+    <li>كم دعوى عاجلة في الملف كله؟ وكم فات منها عند 60؟</li>
+    <li>هل يتسع المكتب العاجل لما يصله عند 60؟</li>
+    <li>ما الذي تقوله «الدقة» الإجمالية عند 60 ولا تقوله الخانة «عاجل ودون العتبة»؟</li>
+  </ol>
+
+  <details class="instructor">
+    <summary>للمدرّب</summary>
+    <ul>
+      <li>الحل في <code>labs/solutions/confusion_table.csv</code>، ويتحقق منه <code>uv run labs/solutions/check.py 2.1</code>.</li>
+      <li>عند 60: عاجل وفوق 52، عادي وفوق 17، عاجل ودون 11، عادي ودون 420. المجموع فوق العتبة 69، ضمن طاقة 90. الدعاوى العاجلة 63، فات منها 11 (17%).</li>
+      <li>الدقة الإجمالية (52 + 420) ÷ 500 = 94%. رقم مرتفع يخفي 11 صاحب دعوى عاجلة ينتظرون ستة أسابيع.</li>
+      <li>خطأ شائع: عدّ الصفوف الفارغة أو العنوان. المجموع يجب أن يكون 500.</li>
+    </ul>
+  </details>
+</article>
+<nav class="pager"><a href="D1_8_exhibit_intake.html" rel="prev">→ المختبر السابق</a><a href="D2_2_second_threshold.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في قطاع العدل والخدمات القانونية<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع 9137dd5</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T21:03:51Z","version":"2027.1.0","commit":"9137dd5"},"course":{"id":"use-sec-207","code":"USE-SEC-207","title":"الذكاء الاصطناعي في قطاع العدل والخدمات القانونية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-sec-207/","repo":"SDAIAAcademy/use-sec-207","home":"../index.html"},"lab":{"id":"2.1","title":"جدول الالتباس عند العتبة 60","summary":"تبني في جدول بيانات جدول الالتباس لمصنِّف «أسبقية» على 500 صحيفة دعوى عند العتبة التي ضبطها المورّد (60)، وتقارن ما يذهب إلى مكتب الدعاوى العاجلة بطاقته. الذكاء الاصطناعي مدرّس يسأل ولا يجيب.","minutes":25,"day":2,"unit":"اليوم 2","session":1,"deck":"../slides/day2.html#lab-2-1","prev":"D1_8_exhibit_intake.html","next":"D2_2_second_threshold.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

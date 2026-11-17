@@ -1,0 +1,43 @@
+# الذكاء الاصطناعي في قطاع العدل والخدمات القانونية
+
+> تفرّق ما يساعد المحامي عمّا يُبنى عليه قرار في حق شخص، وتقيس أخطاء أدوات البحث ومراجعة العقود والفرز على مواد اصطناعية، وتفحص درجة مخاطر من حيث الإشعار والتفسير والمراجعة والتظلم، وتدافع عن خريطة الفرص والمخاطر. مقرر من أكاديمية سدايا، الرمز USE-SEC-207، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-sec-207/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-sec-207/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-sec-207/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 21,248 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-sec-207/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: ما يساعد المحامي وما يقرر في حق شخص](https://sdaiaacademy.github.io/use-sec-207/slides/day1.md): الجلسات: نوعان من الذكاء الاصطناعي القانوني، كيف يختلق مساعد البحث المراجع، المراجع المعدّلة والمنقوضة والمقتبسة خطأً، النسخ والترجمة بالعربية، مراجعة العقود بدليل الشروط، البنود الفائتة والاطمئنان الزائف، معدلات خطأ يوقّع عليها المدير، الأدلة المولّدة أو المعدّلة، والتحيز للأتمتة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/slides/day1.html؛ نحو 10,020 من الوحدات النصية
+- [اليوم 2: الفرز والإجراءات العادلة والخريطة](https://sdaiaacademy.github.io/use-sec-207/slides/day2.md): الجلسات: استقبال الدعاوى وفرزها، عتبتان، ومن يتحمل كل خطأ، التحيز في بيانات القضايا السابقة، الإشعار والتفسير، صاحب القرار والمراجعة والتظلم، الإفصاح والتصنيف عالي المخاطر بحسب الجهة، القيمة وتكلفة الخطأ وقابلية التراجع والجاهزية والطعن، التجربة بعينة مراجَعة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/slides/day2.html؛ نحو 9,031 من الوحدات النصية
+- [المناقشة الختامية: خريطة الفرص والمخاطر، تُناقَش مباشرة](https://sdaiaacademy.github.io/use-sec-207/slides/capstone.md): الصفحة: https://sdaiaacademy.github.io/use-sec-207/slides/capstone.html؛ نحو 1,443 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: تصنيف عشرة استخدامات](https://sdaiaacademy.github.io/use-sec-207/labs/D1_1_sort_deployments.md): اليوم 1، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_1_sort_deployments.html
+- [المختبر 1.2: تدقيق المراجع: الجزء الأول](https://sdaiaacademy.github.io/use-sec-207/labs/D1_2_citation_audit_part1.md): اليوم 1، الجلسة 2، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_2_citation_audit_part1.html
+- [المختبر 1.3: تدقيق المراجع: الجزء الثاني](https://sdaiaacademy.github.io/use-sec-207/labs/D1_3_citation_audit_part2.md): اليوم 1، الجلسة 3، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_3_citation_audit_part2.html
+- [المختبر 1.4: فحص محضر جلسة وترجمة بند](https://sdaiaacademy.github.io/use-sec-207/labs/D1_4_transcript_translation.md): اليوم 1، الجلسة 4، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_4_transcript_translation.html
+- [المختبر 1.5: مراجعة العقود: الجزء الأول](https://sdaiaacademy.github.io/use-sec-207/labs/D1_5_contract_review_part1.md): اليوم 1، الجلسة 5، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_5_contract_review_part1.html
+- [المختبر 1.6: مراجعة العقود: الجزء الثاني](https://sdaiaacademy.github.io/use-sec-207/labs/D1_6_contract_review_part2.md): اليوم 1، الجلسة 6، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_6_contract_review_part2.html
+- [المختبر 1.7: سجل الأخطاء](https://sdaiaacademy.github.io/use-sec-207/labs/D1_7_error_log.md): اليوم 1، الجلسة 7، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_7_error_log.html
+- [المختبر 1.8: فحص استلام الأدلة الرقمية](https://sdaiaacademy.github.io/use-sec-207/labs/D1_8_exhibit_intake.md): اليوم 1، الجلسة 8، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D1_8_exhibit_intake.html
+- [المختبر 2.1: جدول الالتباس عند العتبة 60](https://sdaiaacademy.github.io/use-sec-207/labs/D2_1_triage_threshold.md): اليوم 2، الجلسة 1، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_1_triage_threshold.html
+- [المختبر 2.2: العتبة الثانية والاختيار](https://sdaiaacademy.github.io/use-sec-207/labs/D2_2_second_threshold.md): اليوم 2، الجلسة 2، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_2_second_threshold.html
+- [المختبر 2.3: الأخطاء بحسب مقدّم الدعوى](https://sdaiaacademy.github.io/use-sec-207/labs/D2_3_errors_by_filer.md): اليوم 2، الجلسة 3، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_3_errors_by_filer.html
+- [المختبر 2.4: مراجعة الإجراءات العادلة: الجزء الأول](https://sdaiaacademy.github.io/use-sec-207/labs/D2_4_due_process_part1.md): اليوم 2، الجلسة 4، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_4_due_process_part1.html
+- [المختبر 2.5: مراجعة الإجراءات العادلة: الجزء الثاني](https://sdaiaacademy.github.io/use-sec-207/labs/D2_5_due_process_part2.md): اليوم 2، الجلسة 5، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_5_due_process_part2.html
+- [المختبر 2.6: التصنيف والإفصاح](https://sdaiaacademy.github.io/use-sec-207/labs/D2_6_classify_and_disclose.md): اليوم 2، الجلسة 6، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_6_classify_and_disclose.html
+- [المختبر 2.7: تقييم اثنتي عشرة حالة](https://sdaiaacademy.github.io/use-sec-207/labs/D2_7_score_use_cases.md): اليوم 2، الجلسة 7، 25 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_7_score_use_cases.html
+- [المختبر 2.8: الخريطة في صفحة وخطة التجربة](https://sdaiaacademy.github.io/use-sec-207/labs/D2_8_map_and_pilot.md): اليوم 2، الجلسة 8، 20 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-207/labs/D2_8_map_and_pilot.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-sec-207/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 21,248 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-sec-207/context/day1.md): اليوم 1، نحو 10,020 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-sec-207/context/day2.md): اليوم 2، نحو 9,031 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-sec-207/context/capstone.md): المناقشة الختامية، نحو 1,443 من الوحدات النصية
